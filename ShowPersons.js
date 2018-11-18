@@ -4,7 +4,7 @@ import PersonList from "./PersonList"
 
 //write ipv4 address here
 
-const url = 'https://albertvandel.dk/jwtBackend-1.0-SNAPSHOT/api/person'
+const url = 'https://albertvandel.dk/jwtBackend-1.0-SNAPSHOT/api/person/unprotected'
 
 export default class ShowPersons extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export default class ShowPersons extends React.Component {
     const res = await fetch(url);
     const data = await res.json();
     console.log(data)
-    this.setState({persons: data.person})
+    this.setState({persons: data})
   }
   
   render() {
