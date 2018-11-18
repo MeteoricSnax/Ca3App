@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import { StyleSheet,Text, View } from 'react-native';
-import AllPersons from "./AllPersons"
 import PersonList from "./PersonList"
 
 //write ipv4 address here
 
-const url = 'http://10.0.0.58:8080/jwtbackend/api/person'
+const url = 'https://albertvandel.dk/jwtBackend-1.0-SNAPSHOT/api/person'
 
 export default class ShowPersons extends React.Component {
   constructor(props) {
